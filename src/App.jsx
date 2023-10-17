@@ -58,7 +58,7 @@ function App() {
   return (
     <>
       <form onSubmit={handleForm}>
-        <input type="text" name="name" id="" />
+        <input type="text" name="name" id=""/>
         <br></br>
         <input type="email" name="email" id="" />
         <br />
@@ -69,8 +69,7 @@ function App() {
           <h4 key={user._id}>
             {user.name}
             <button onClick={() => handleDlt(user._id)}>X</button>
-            <button>Update</button>
-            <Link to={`/users/${user._id}`}> Details </Link>
+            <Link to={`/users/${user._id}`}> Update </Link>
           </h4>
         ))}
       </div>
